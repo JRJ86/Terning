@@ -7,25 +7,22 @@ import java.lang.reflect.Array;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DiceTest {
-    /**@Author Gruppe 31
+
+
+    /**@author Gruppe 31
      * Vi tester at en terning slår mellem 1 og 6, og ikke højere, ved at gentage slaget 10000 gange
      */
     @Test
     void eyeTest(){
         Dice d1 = new Dice();
-
-
         for (int i=0;i<10000;i++) {
             int antalEyes = d1.roll();
-
-
             assertTrue((antalEyes >= 1 && antalEyes <= 6));
-
         }
     }
 
     /**
-     * @Author Gruppe 31
+     * @author Gruppe 31
      * Vi tester om kastet med værdi 1 forekommer 10000 +- 400 gange ved 60000 slag
      * SPOILER hyppigheden er ikke indenfor intervallet.
      */
@@ -43,7 +40,7 @@ class DiceTest {
 
     }
     /**
-     * @Author Gruppe 31
+     * @author Gruppe 31
      * Vi tester om kastet med værdi 2 forekommer 10000 +- 400 gange ved 60000 slag
      * SPOILER hyppigheden er ikke indenfor intervallet.
      */
@@ -61,7 +58,7 @@ class DiceTest {
 
     }
     /**
-     * @Author Gruppe 31
+     * @author Gruppe 31
      * Vi tester om kastet med værdi 3 forekommer 10000 +- 400 gange ved 60000 slag
      * SPOILER hyppigheden er ikke indenfor intervallet.
      */
@@ -79,7 +76,7 @@ class DiceTest {
 
     }
     /**
-     * @Author Gruppe 31
+     * @author Gruppe 31
      * Vi tester om kastet med værdi 4 forekommer 10000 +- 400 gange ved 60000 slag
      * SPOILER hyppigheden er ikke indenfor intervallet.
      */
@@ -97,7 +94,7 @@ class DiceTest {
 
     }
     /**
-     * @Author Gruppe 31
+     * @author Gruppe 31
      * Vi tester om kastet med værdi 5 forekommer 10000 +- 400 gange ved 60000 slag
      * SPOILER hyppigheden er ikke indenfor intervallet.
      */
@@ -115,7 +112,7 @@ class DiceTest {
 
     }
     /**
-     * @Author Gruppe 31
+     * @author Gruppe 31
      * Vi tester om kastet med værdi 6 forekommer 10000 +- 400 gange ved 60000 slag
      * SPOILER hyppigheden er ikke indenfor intervallet.
      */
@@ -130,6 +127,7 @@ class DiceTest {
         }
         System.out.println(sum);
         assertTrue(sum>=9600 && sum<=10400);
-
     }
+
+
 }
