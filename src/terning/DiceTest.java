@@ -23,6 +23,12 @@ class DiceTest {
 
         }
     }
+
+    /**
+     * @Author Gruppe 31
+     * Vi tester om kastet med værdi 1 forekommer 10000 +- 400 gange ved 60000 slag
+     * SPOILER hyppigheden er ikke indenfor intervallet.
+     */
     @Test
     void terningKast1() {
         Dice d1 = new Dice();
@@ -36,6 +42,11 @@ class DiceTest {
         assertTrue(sum>=9600 && sum<=10400);
 
     }
+    /**
+     * @Author Gruppe 31
+     * Vi tester om kastet med værdi 2 forekommer 10000 +- 400 gange ved 60000 slag
+     * SPOILER hyppigheden er ikke indenfor intervallet.
+     */
     @Test
     void terningKast2() {
         Dice d1 = new Dice();
@@ -49,6 +60,11 @@ class DiceTest {
         assertTrue(sum>=9600 && sum<=10400);
 
     }
+    /**
+     * @Author Gruppe 31
+     * Vi tester om kastet med værdi 3 forekommer 10000 +- 400 gange ved 60000 slag
+     * SPOILER hyppigheden er ikke indenfor intervallet.
+     */
     @Test
     void terningKast3() {
         Dice d1 = new Dice();
@@ -62,6 +78,11 @@ class DiceTest {
         assertTrue(sum>=9600 && sum<=10400);
 
     }
+    /**
+     * @Author Gruppe 31
+     * Vi tester om kastet med værdi 4 forekommer 10000 +- 400 gange ved 60000 slag
+     * SPOILER hyppigheden er ikke indenfor intervallet.
+     */
     @Test
     void terningKast4() {
         Dice d1 = new Dice();
@@ -75,6 +96,11 @@ class DiceTest {
         assertTrue(sum>=9600 && sum<=10400);
 
     }
+    /**
+     * @Author Gruppe 31
+     * Vi tester om kastet med værdi 5 forekommer 10000 +- 400 gange ved 60000 slag
+     * SPOILER hyppigheden er ikke indenfor intervallet.
+     */
     @Test
     void terningKast5() {
         Dice d1 = new Dice();
@@ -88,6 +114,11 @@ class DiceTest {
         assertTrue(sum>=9600 && sum<=10400);
 
     }
+    /**
+     * @Author Gruppe 31
+     * Vi tester om kastet med værdi 6 forekommer 10000 +- 400 gange ved 60000 slag
+     * SPOILER hyppigheden er ikke indenfor intervallet.
+     */
     @Test
     void terningKast6() {
         Dice d1 = new Dice();
