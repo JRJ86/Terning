@@ -19,7 +19,7 @@ class DiceTest {
             int antalEyes = d1.roll();
 
 
-            assertTrue((antalEyes >= 1 || antalEyes <= 6));
+            assertTrue((antalEyes >= 1 && antalEyes <= 6));
 
         }
     }
