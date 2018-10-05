@@ -15,8 +15,15 @@ class DiceTest {
         int eye;
 
         Dice d1 = new Dice();
-        d1.rollMultiple(10000);
 
+
+        for (int i=0;i<10000;i++) {
+            int antalEyes = d1.roll();
+
+
+            assertTrue((antalEyes >= 1 || antalEyes <= 6));
+
+        }
 
     }
 
